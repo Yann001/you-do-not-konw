@@ -59,7 +59,7 @@ namespace Util
         {
             string toSave = Serialize.SerializeObject(obj);
 
-            toSave = Encrypt.RijndaelEncrypt(toSave, Config.Config.SecretKey);
+            toSave = Encrypt.RijndaelEncrypt(toSave, Config.Config.SecretKey.PadRight(32, 'x'));
             CreateFile(fileName, toSave);
         }
 
@@ -74,7 +74,7 @@ namespace Util
             StreamReader streamReader = File.OpenText(fileName);
             string data = streamReader.ReadToEnd();
 
-            data = Encrypt.RijndaelDecrypt(data, Config.Config.SecretKey);
+            data = Encrypt.RijndaelDecrypt(data, Config.Config.SecretKey.PadRight(32, 'x'));
             streamReader.Close();
             return Serialize.DeserializeObject(data, type);
         }

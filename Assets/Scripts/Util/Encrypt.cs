@@ -14,7 +14,7 @@ namespace Util
         /// <param name="key">Key.</param>
         public static string RijndaelEncrypt(string str, string key)
         {
-            byte[] keyArray = Encoding.UTF8.GetBytes(key.PadRight(32, 'x'));
+            byte[] keyArray = Encoding.UTF8.GetBytes(key);
             byte[] toEncryptArray = Encoding.UTF8.GetBytes(str);
             RijndaelManaged rDel = new RijndaelManaged
             {
@@ -22,9 +22,8 @@ namespace Util
                 Mode = CipherMode.ECB,
                 Padding = PaddingMode.PKCS7
             };
-            ICryptoTransform cryptoTransform = rDel.CreateDecryptor();
-
-            byte[] resultArray = cryptoTransform.TransformFinalBlock(toEncryptArray, 0, toEncryptArray.Length);
+            ICryptoTransform cTransform = rDel.CreateEncryptor();
+            byte[] resultArray = cTransform.TransformFinalBlock(toEncryptArray, 0, toEncryptArray.Length);
             return Convert.ToBase64String(resultArray, 0, resultArray.Length);
         }
 
@@ -36,18 +35,16 @@ namespace Util
         /// <param name="key">Key.</param>
         public static string RijndaelDecrypt(string str, string key)
         {
-            byte[] keyArray = Encoding.UTF8.GetBytes(key.PadRight(32, 'x'));
-            byte[] toDecryptArray = Encoding.UTF8.GetBytes(str);
-
+            byte[] keyArray = Encoding.UTF8.GetBytes(key);
+            byte[] toEncryptArray = Convert.FromBase64String(str);
             RijndaelManaged rDel = new RijndaelManaged
             {
                 Key = keyArray,
                 Mode = CipherMode.ECB,
                 Padding = PaddingMode.PKCS7
             };
-            ICryptoTransform cryptoTransform = rDel.CreateDecryptor();
-
-            byte[] resultArray = cryptoTransform.TransformFinalBlock(toDecryptArray, 0, toDecryptArray.Length);
+            ICryptoTransform cTransform = rDel.CreateDecryptor();
+            byte[] resultArray = cTransform.TransformFinalBlock(toEncryptArray, 0, toEncryptArray.Length);
             return Encoding.UTF8.GetString(resultArray);
         }
     }

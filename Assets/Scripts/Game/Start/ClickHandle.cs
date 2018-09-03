@@ -20,6 +20,12 @@ public class ClickHandle : MonoBehaviour {
     {
         IOHelper.SetData(Config.Config.SAVE_DATA_FILE_NAME, new Joy());
 
+        Joy joy = (Joy)IOHelper.GetData(Config.Config.SAVE_DATA_FILE_NAME, typeof(Joy));
+
+        Debug.Log(joy.name);
+        Debug.Log(joy.age);
+        Debug.Log(joy.money);
+
         SceneManager.LoadScene("Introduction");
     }
 }
