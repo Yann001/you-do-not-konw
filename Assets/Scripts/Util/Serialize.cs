@@ -12,6 +12,11 @@ namespace Util
         public static string SerializeObject(object obj)
         {
             string serializeString = string.Empty;
+            //JsonConvert.DefaultSettings = () => new JsonSerializerSettings
+            //{
+            //    ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+            //};
+
             serializeString = JsonConvert.SerializeObject(obj);
             return serializeString;
         }
@@ -22,10 +27,10 @@ namespace Util
         /// <returns>The object.</returns>
         /// <param name="str">String.</param>
         /// <param name="type">Type.</param>
-        public static object DeserializeObject(string str, Type type)
+        public static T DeserializeObject<T>(string str)
         {
-            object deserializeObject = null;
-            deserializeObject = JsonConvert.DeserializeObject(str, type);
+            T deserializeObject;
+            deserializeObject = JsonConvert.DeserializeObject<T>(str);
             return deserializeObject;
         }
     }

@@ -69,14 +69,14 @@ namespace Util
         /// <returns>The data.</returns>
         /// <param name="fileName">File name.</param>
         /// <param name="type">Type.</param>
-        public static object GetData(string fileName, Type type)
+        public static T GetData<T>(string fileName)
         {
             StreamReader streamReader = File.OpenText(fileName);
             string data = streamReader.ReadToEnd();
 
             data = Encrypt.RijndaelDecrypt(data, Config.Config.SecretKey.PadRight(32, 'x'));
             streamReader.Close();
-            return Serialize.DeserializeObject(data, type);
+            return Serialize.DeserializeObject<T>(data);
         }
     }
 }

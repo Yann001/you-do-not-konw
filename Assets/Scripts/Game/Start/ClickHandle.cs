@@ -5,27 +5,33 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Util;
 using Config;
+using Game;
 
 public class ClickHandle : MonoBehaviour {
 
-    public class Joy {
-        public string name = "joy";
-        public int age = 25;
-        public byte sex = 1;
-        public int satisfy = 60;
-        public int money = 2000;
+    public void Start()
+    {
+        // initial scene info
+        SceneInfo sceneInfo = new SceneInfo
+        {
+            SceneId = 1,
+            SceneName = "GameStart"
+        };
+
+        UserInfo player = new UserInfo
+        {
+            Satisfy = 50,
+            Money = 2000,
+            GirlSatisf = 50,
+            Progress = sceneInfo
+        };
+
+        DataManager.Save("userInfo", player);
     }
 
     public void StartClick()
     {
-        IOHelper.SetData(Config.Config.SAVE_DATA_FILE_NAME, new Joy());
-
-        Joy joy = (Joy)IOHelper.GetData(Config.Config.SAVE_DATA_FILE_NAME, typeof(Joy));
-
-        Debug.Log(joy.name);
-        Debug.Log(joy.age);
-        Debug.Log(joy.money);
-
+        Debug.Log(DataManager.Get<UserInfo>("userInfo"));
         SceneManager.LoadScene("Introduction");
     }
 }
