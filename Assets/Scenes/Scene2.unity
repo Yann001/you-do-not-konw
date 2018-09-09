@@ -1256,7 +1256,7 @@ GameObject:
   m_Layer: 0
   m_Name: KitchenView
   m_TagString: Untagged
-  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3920,7 +3920,7 @@ GameObject:
   m_Layer: 0
   m_Name: DinnerView
   m_TagString: Untagged
-  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4715,7 +4715,7 @@ GameObject:
   m_Layer: 0
   m_Name: GoHomeView
   m_TagString: Untagged
-  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6267,6 +6267,7 @@ GameObject:
   - component: {fileID: 1952545321}
   - component: {fileID: 1952545356}
   - component: {fileID: 1952545377}
+  - component: {fileID: 1952545378}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -6287,21 +6288,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 566.5431, y: 266.2349}
+  scrollPos: {x: 302.9835, y: 121.92809}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 442
-  zoom: 0.49000046
+  zoom: 0.7600002
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1952545340}
-  selectedCommands:
-  - {fileID: 1952545361}
+  selectedBlocks: []
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -6540,7 +6539,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 568.34424
     y: 22.097351
-    width: 120
+    width: 122.3684
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6671,7 +6670,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 29
   indentLevel: 0
-  duration: 3
+  duration: 1
   fadeOut: 1
   targetView: {fileID: 1533122441}
   waitUntilFinished: 1
@@ -6693,7 +6692,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 221.48096
     y: 157.17728
-    width: 120
+    width: 121.05261
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6756,6 +6755,7 @@ MonoBehaviour:
   eventHandler: {fileID: 1952545321}
   commandList:
   - {fileID: 1952545317}
+  - {fileID: 1952545378}
   - {fileID: 1952545365}
 --- !u!114 &1952545321
 MonoBehaviour:
@@ -6825,7 +6825,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 563.2411
     y: 151.68347
-    width: 120
+    width: 122.3684
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6963,7 +6963,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 564.30994
     y: 82.718
-    width: 120
+    width: 122.3684
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7199,7 +7199,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 561.0505
     y: 215.30003
-    width: 120
+    width: 122.3684
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7498,8 +7498,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 554.6135
-    y: 281.53537
-    width: 120
+    y: 278.90378
+    width: 122.3684
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8062,6 +8062,23 @@ MonoBehaviour:
     floatRef: {fileID: 0}
     floatVal: 5
   durationOLD: 0
+--- !u!114 &1952545378
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1952545301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 128
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 3
+  durationOLD: 0
 --- !u!1 &1955085569
 GameObject:
   m_ObjectHideFlags: 0
@@ -8454,7 +8471,7 @@ GameObject:
   m_Layer: 0
   m_Name: DoorView
   m_TagString: Untagged
-  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
