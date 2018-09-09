@@ -343,11 +343,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 0, y: 0}
+  scrollPos: {x: 7.5463953, y: 35.707005}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 1
+  zoom: 0.57880944
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -610,7 +610,7 @@ MonoBehaviour:
   - {fileID: 300137098}
 --- !u!114 &300137094
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 300137081}
@@ -636,7 +636,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &300137095
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 300137081}
@@ -662,7 +662,7 @@ MonoBehaviour:
   - {fileID: 300137096}
 --- !u!114 &300137096
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 300137081}
@@ -675,7 +675,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &300137097
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 300137081}
@@ -695,7 +695,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &300137098
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 300137081}
