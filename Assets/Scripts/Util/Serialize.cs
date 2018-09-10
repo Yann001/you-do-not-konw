@@ -26,7 +26,6 @@ namespace Util
         /// </summary>
         /// <returns>The object.</returns>
         /// <param name="str">String.</param>
-        /// <param name="type">Type.</param>
         public static T DeserializeObject<T>(string str)
         {
             T deserializeObject;
