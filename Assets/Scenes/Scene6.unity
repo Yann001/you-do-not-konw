@@ -207,7 +207,8 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 114178755597213744, guid: 36b1f420bf72545dd856e74be6a5aad8,
+    type: 2}
 --- !u!114 &334740105
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -236,7 +237,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 8
+    x: 6.897464
     y: 89
     width: 120
     height: 40
@@ -276,7 +277,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 334740130}
+  - {fileID: 334740106}
   selectedCommands: []
   variables: []
   description: 
