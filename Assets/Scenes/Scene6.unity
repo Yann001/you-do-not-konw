@@ -222,7 +222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 334740106}
-  waitForFrames: 1
+  waitForFrames: 3
 --- !u!114 &334740106
 MonoBehaviour:
   m_ObjectHideFlags: 2

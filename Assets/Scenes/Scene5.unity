@@ -420,7 +420,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 749075590}
+  - {fileID: 749075558}
   selectedCommands: []
   variables: []
   description: 
@@ -497,7 +497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 749075558}
-  waitForFrames: 1
+  waitForFrames: 5
 --- !u!4 &749075560
 Transform:
   m_ObjectHideFlags: 0
@@ -822,7 +822,7 @@ MonoBehaviour:
   - {fileID: 749075579}
 --- !u!114 &749075573
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 749075555}
@@ -1206,7 +1206,7 @@ MonoBehaviour:
   _sceneName:
     stringRef: {fileID: 0}
     stringVal: Scene6
-  loadingImage: {fileID: 0}
+  loadingImage: {fileID: 2800000, guid: 7ac29390a4cf7a844b74be340bfbf66a, type: 3}
   sceneNameOLD: 
 --- !u!114 &749075590
 MonoBehaviour:
@@ -1276,7 +1276,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &749075593
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 749075555}
@@ -1296,7 +1296,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &749075594
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 749075555}
@@ -1316,7 +1316,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &749075595
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 749075555}
